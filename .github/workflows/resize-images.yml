@@ -35,7 +35,7 @@ jobs:
           # Le '>', '<', '=' sont des opérateurs de géométrie dans ImageMagick
           # '>': redimensionne seulement si l'image est plus grande
           # '-strip': supprime les profils EXIF et de couleur pour réduire la taille du fichier
-          mogrify -resize '800x>' -strip "$file"
+          mogrify -resize '1200x>' -strip "$file"
         done
 
     - name: Committer les changements (si des images ont été redimensionnées)
